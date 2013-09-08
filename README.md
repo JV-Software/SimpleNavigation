@@ -1,5 +1,7 @@
 ## Simple Navigation for PHP
 
+[![Build Status](https://travis-ci.org/JV-Software/SimpleNavigation.png?branch=master)](https://travis-ci.org/JV-Software/SimpleNavigation)
+
 Super simple class for rendering navigation from an array of items.
 
 ### Installation
