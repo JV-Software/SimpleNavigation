@@ -1,12 +1,12 @@
 <?php
-use JVS\SimpleNavigation;
+namespace JVS;
 
 /**
  * SimpleNavigation tests
  *
  * @author Javier Villanueva <info@jvsoftware.com>
  */
-class SimpleNavigationTest extends PHPUnit_Framework_TestCase
+class SimpleNavigationTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * SimpleNavigation instance
@@ -45,11 +45,11 @@ class SimpleNavigationTest extends PHPUnit_Framework_TestCase
         $htmlMenu .= '<li><a href="#">About</a></li>';
         $htmlMenu .= '</ul>';
 
-        $expectedDom = new DomDocument;
+        $expectedDom = new \DomDocument;
         $expectedDom->loadHtml($htmlMenu);
         $expectedDom->preservewhitespace = false;
 
-        $actualDom = new DomDocument();
+        $actualDom = new \DomDocument();
         $actualDom->loadHtml($this->simpleNavigation->make($simpleItems));
         $actualDom->preservewhitespace = false;
 
@@ -75,11 +75,11 @@ class SimpleNavigationTest extends PHPUnit_Framework_TestCase
         $htmlMenu .= '<li><a href="http://about.com">About</a></li>';
         $htmlMenu .= '</ul>';
 
-        $expectedDom = new DomDocument;
+        $expectedDom = new \DomDocument;
         $expectedDom->loadHtml($htmlMenu);
         $expectedDom->preservewhitespace = false;
 
-        $actualDom = new DomDocument();
+        $actualDom = new \DomDocument();
         $actualDom->loadHtml($this->simpleNavigation->make($linkedItems));
         $actualDom->preservewhitespace = false;
 
@@ -113,11 +113,11 @@ class SimpleNavigationTest extends PHPUnit_Framework_TestCase
         $htmlMenu .= '</li>';
         $htmlMenu .= '</ul>';
 
-        $expectedDom = new DomDocument;
+        $expectedDom = new \DomDocument;
         $expectedDom->loadHtml($htmlMenu);
         $expectedDom->preservewhitespace = false;
 
-        $actualDom = new DomDocument();
+        $actualDom = new \DomDocument();
         $actualDom->loadHtml($this->simpleNavigation->make($multiLevelItems));
         $actualDom->preservewhitespace = false;
 
