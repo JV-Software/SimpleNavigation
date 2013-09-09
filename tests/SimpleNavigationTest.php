@@ -39,7 +39,7 @@ class SimpleNavigationTest extends \PHPUnit_Framework_TestCase
     {
         $simpleItems = array('Home', 'Blog', 'About');
 
-        $htmlMenu = '<ul>';
+        $htmlMenu  = '<ul>';
         $htmlMenu .= '<li><a href="#">Home</a></li>';
         $htmlMenu .= '<li><a href="#">Blog</a></li>';
         $htmlMenu .= '<li><a href="#">About</a></li>';
@@ -69,7 +69,7 @@ class SimpleNavigationTest extends \PHPUnit_Framework_TestCase
             'About' => 'http://about.com',
         );
 
-        $htmlMenu = '<ul>';
+        $htmlMenu  = '<ul>';
         $htmlMenu .= '<li><a href="http://home.com">Home</a></li>';
         $htmlMenu .= '<li><a href="http://blog.com">Blog</a></li>';
         $htmlMenu .= '<li><a href="http://about.com">About</a></li>';
@@ -102,7 +102,7 @@ class SimpleNavigationTest extends \PHPUnit_Framework_TestCase
             ),
         );
 
-        $htmlMenu = '<ul>';
+        $htmlMenu  = '<ul>';
         $htmlMenu .= '<li><a href="http://home.com">Home</a></li>';
         $htmlMenu .= '<li><a href="http://blog.com">Blog</a></li>';
         $htmlMenu .= '<li><a href="#">About</a>';
